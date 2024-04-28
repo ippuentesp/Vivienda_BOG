@@ -1,6 +1,6 @@
 /*#Se crea la base de datos OLAP*/
 
-CREATE DATABASE dwh_viviendas;
+CREATE DATABASE IF NOT EXISTS dwh_viviendas ;
 
 USE dwh_Viviendas;
 

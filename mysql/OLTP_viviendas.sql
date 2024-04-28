@@ -3,7 +3,7 @@ CREATE DATABASE db_viviendas_transact;
 USE db_viviendas_transact;
 
 /* SE CREA LA OLTP con la data de Inmuebles */
-CREATE TABLE Inmuebles (
+CREATE TABLE inmuebles (
     ID INT AUTO_INCREMENT PRIMARY KEY,
     Tipo VARCHAR(50),
     Descripcion VARCHAR(255),
@@ -16,7 +16,7 @@ CREATE TABLE Inmuebles (
 );
 
 LOAD DATA INFILE 'data/inmuebles_bogota.csv'
-INTO TABLE Inmuebles
+INTO TABLE inmuebles
 FIELDS TERMINATED BY ',' 
 ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
